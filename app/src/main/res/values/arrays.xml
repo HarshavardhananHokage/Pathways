@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Pathway Path Drawable Array -->
+    <array name="pathways_path_drawables">
+        <item>@drawable/dynamic_leadership_logo</item>
+        <item>@drawable/effective_coaching_logo</item>
+        <item>@drawable/innovative_planning_logo</item>
+        <item>@drawable/leadership_development_logo</item>
+        <item>@drawable/motivational_strategies_logo</item>
+        <item>@drawable/persuasive_influence_logo</item>
+        <item>@drawable/presentation_mastery_logo</item>
+        <item>@drawable/strategic_relationships_logo</item>
+        <item>@drawable/team_collaboration_logo</item>
+        <item>@drawable/visionary_communication_logo</item>
+    </array>
+</resources>

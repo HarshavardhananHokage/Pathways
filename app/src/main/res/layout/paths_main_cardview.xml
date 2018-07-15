@@ -5,6 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginBottom="100dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:layout_marginTop="30dp"
     app:cardElevation="4dp"
     app:cardCornerRadius="10dp">
 
@@ -13,7 +17,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/pmcv_iv_path_logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -32,7 +36,7 @@
             app:srcCompat="@drawable/dynamic_leadership_logo" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/pmcv_tv_path_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
@@ -45,13 +49,13 @@
             android:textAppearance="@android:style/TextAppearance.Large"
             app:layout_constrainedHeight="true"
             app:layout_constrainedWidth="true"
-            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintBottom_toTopOf="@+id/pmcv_iv_path_logo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/pmcv_bt_explore_path"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
@@ -65,22 +69,22 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/pmcv_tv_path_desc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginLeft="36dp"
             android:layout_marginRight="36dp"
             android:layout_marginTop="8dp"
-            android:maxLines="8"
             android:ellipsize="end"
+            android:maxLines="8"
             android:text="@string/pathdesc_dynamic_leadership"
             app:layout_constrainedHeight="true"
             app:layout_constrainedWidth="true"
-            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintBottom_toTopOf="@+id/pmcv_bt_explore_path"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/pmcv_iv_path_logo"
             app:layout_constraintVertical_bias="0.25" />
 
     </android.support.constraint.ConstraintLayout>
