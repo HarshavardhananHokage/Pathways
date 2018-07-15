@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">Pathways</string>
+
+    <!-- General -->
+    <string name="app_bt_go_to_detail">Explore</string>
+
+    <!-- Pathways List-->
+    <string name="pathname_dynamic_leadership">Dynamic Leadership</string>
+    <string name="pathname_effective_coaching">Effective Coaching</string>
+    <string name="pathname_innovative_planning">Innovative Planning</string>
+    <string name="pathname_leadership_development">Leadership Development</string>
+    <string name="pathname_motivational_strategies">Motivational Strategies</string>
+    <string name="pathname_persuasive_influence">Persuasive Influence</string>
+    <string name="pathname_presentation_mastery">Presentation Mastery</string>
+    <string name="pathname_strategic_relationships">Strategic Relationships</string>
+    <string name="pathname_team_collaboration">Team Collaboration</string>
+    <string name="pathname_visionary_communication">Visionary Communication</string>
+
+    <!-- Logo Content Descriptions -->
+    <string name="cont_desc_dynamic_leadership_logo">Dynamic Leadership Pathways Logo</string>
+    <string name="cont_desc_effective_coaching_logo">Effective Coaching Pathways Logo</string>
+    <string name="cont_desc_innovative_planning_logo">Innovative Planning Pathways Logo</string>
+    <string name="cont_desc_leadership_development_logo">Leadership Development Pathways Logo</string>
+    <string name="cont_desc_motivational_strategies_logo">Motivational Strategies Pathways Logo</string>
+    <string name="cont_desc_persuasive_influence_logo">Persuasive Influence Pathways Logo</string>
+    <string name="cont_desc_presentation_mastery_logo">Presentation Mastery Pathways Logo</string>
+    <string name="cont_desc_strategic_relationships_logo">Strategic Relationships Pathways Logo</string>
+    <string name="cont_desc_team_collaboration_logo">Team Collaboration Pathways Logo</string>
+    <string name="cont_desc_visionary_communication_logo">Visionary Communication Pathways Logo</string>
+
+    <!-- Pathways Path Description -->
+    <string name="pathdesc_dynamic_leadership">
+        This path helps you build your skills as a strategic leader.
+        The projects on this path focus on understanding leadership and communication styles,
+        the effect of conflict on a group and the skills needed to defuse and direct conflict.
+        These projects also emphasize the development of strategies to facilitate change in an
+        organization or group, interpersonal communication and public speaking. This path
+        culminates in a project focused on applying your leadership skills.
+    </string>
+    <string name="pathdesc_effective_coaching">
+        This path helps you build your skills as a positive communicator and leader. The projects on
+        this path focus on understanding and building consensus, contributing to the development of
+        others by coaching and establishing strong public speaking skills. Each project emphasizes the
+        importance of effective interpersonal communication. This path culminates in a
+        “High Performance Leadership” project of your design.
+    </string>
+    <string name="pathdesc_innovative_planning">
+        This path helps you build your skills as a public speaker and leader. The projects on this path
+        focus on developing a strong connection with audience members when you present, speech writing
+        and speech delivery. The projects contribute to building an understanding of the steps to manage
+        a project, as well as creating innovative solutions. This path culminates in a
+        “High Performance Leadership” project of your design.
+    </string>
+    <string name="pathdesc_leadership_development">
+        This path helps you build your skills as an effective communicator and leader. The projects on
+        this path focus on learning how to manage time, as well as how to develop and implement a plan.
+        Public speaking and leading a team are emphasized in all projects. This path culminates in the
+        planning and execution of an event that will allow you to apply everything you learned.
+    </string>
+    <string name="pathdesc_motivational_strategies">
+        This path helps you build your skills as a powerful and effective communicator. The projects focus
+        on learning strategies for building connections with the people around you, understanding motivation
+        and successfully leading small groups to accomplish tasks. This path culminates in a comprehensive
+        team-building project that brings all of your skills together—including public speaking.
+    </string>
+    <string name="pathdesc_persuasive_influence">
+        This path helps you build your skills as an innovative communicator and leader. The projects on this
+        path focus on how to negotiate a positive outcome together with building strong interpersonal communication
+        and public speaking skills. Each project emphasizes developing leadership skills to use in complex situations,
+        as well as creating innovative solutions to challenges. This path culminates in a “High Performance Leadership”
+        project of your design.
+    </string>
+    <string name="pathdesc_presentation_mastery">
+        This path helps you build your skills as an accomplished public speaker. The projects on this path focus
+        on learning how an audience responds to you and improving your connection with audience members. The
+        projects contribute to developing an understanding of effective public speaking technique, including speech
+        writing and speech delivery. This path culminates in an extended speech that will allow you to apply what
+        you learned.
+    </string>
+    <string name="pathdesc_strategic_relationships">
+        This path helps you build your skills as a leader in communication. The projects on this path focus on
+        understanding diversity, building personal and/or professional connections with a variety of people and
+        developing a public relations strategy. Communicating well interpersonally and as a public speaker is
+        emphasized in each project. The path culminates in a project to apply your skills as a leader in a
+        volunteer organization.
+    </string>
+    <string name="pathdesc_team_collaboration">
+        This path helps you build your skills as a collaborative leader. The projects on this path focus on active
+        listening, motivating others and collaborating with a team. Each project contributes to building interpersonal
+        communication and public speaking skills. This path culminates in a project focused on applying your leadership
+        skills.
+    </string>
+    <string name="pathdesc_visionary_communication">
+        This path helps you build your skills as a strategic communicator and leader. The projects on this path focus
+        on developing your skills for sharing information with a group, planning communications and creating innovative
+        solutions. Speech writing and speech delivery are emphasized in each project. This path culminates in the
+        development and launch of a long-term personal or professional vision.
+    </string>
+
+
+    <!-- Pathway Title Array -->
+    <string-array name="pathway_title_array">
+        <item>@string/pathname_dynamic_leadership</item>
+        <item>@string/pathname_effective_coaching</item>
+        <item>@string/pathname_innovative_planning</item>
+        <item>@string/pathname_leadership_development</item>
+        <item>@string/pathname_motivational_strategies</item>
+        <item>@string/pathname_persuasive_influence</item>
+        <item>@string/pathname_presentation_mastery</item>
+        <item>@string/pathname_strategic_relationships</item>
+        <item>@string/pathname_team_collaboration</item>
+        <item>@string/pathname_visionary_communication</item>
+    </string-array>
+
+    <!-- Pathway Icon Content Description Array -->
+    <string-array name="pathway_icon_cont_desc_array">
+        <item>@string/cont_desc_dynamic_leadership_logo</item>
+        <item>@string/cont_desc_effective_coaching_logo</item>
+        <item>@string/cont_desc_innovative_planning_logo</item>
+        <item>@string/cont_desc_leadership_development_logo</item>
+        <item>@string/cont_desc_motivational_strategies_logo</item>
+        <item>@string/cont_desc_persuasive_influence_logo</item>
+        <item>@string/cont_desc_presentation_mastery_logo</item>
+        <item>@string/cont_desc_strategic_relationships_logo</item>
+        <item>@string/cont_desc_team_collaboration_logo</item>
+        <item>@string/cont_desc_visionary_communication_logo</item>
+    </string-array>
+
+    <!-- Pathway Path Description Array -->
+    <string-array name="pathway_path_desc_array">
+        <item>@string/pathdesc_dynamic_leadership</item>
+        <item>@string/pathdesc_effective_coaching</item>
+        <item>@string/pathdesc_innovative_planning</item>
+        <item>@string/pathdesc_leadership_development</item>
+        <item>@string/pathdesc_motivational_strategies</item>
+        <item>@string/pathdesc_persuasive_influence</item>
+        <item>@string/pathdesc_presentation_mastery</item>
+        <item>@string/pathdesc_strategic_relationships</item>
+        <item>@string/pathdesc_team_collaboration</item>
+        <item>@string/pathdesc_visionary_communication</item>
+    </string-array>
+</resources>
