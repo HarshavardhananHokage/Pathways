@@ -27,7 +27,7 @@ public class PathsCardViewAdapter extends RecyclerView.Adapter<PathsCardViewAdap
         this.strArr_pathDescs = pathDescs;
         this.strArr_pathLogoContDescs = pathLogoContDescs;
         this.typArr_pathLogos = pathLogos;
-        Log.e(TAG, "Came into Adapter");
+        //Log.e(TAG, "Came into Adapter");
     }
 
     @NonNull
@@ -36,7 +36,7 @@ public class PathsCardViewAdapter extends RecyclerView.Adapter<PathsCardViewAdap
 
         CardView cardView_pathCards = (CardView) LayoutInflater.from(viewGroup.getContext())
                 .inflate(R.layout.paths_main_cardview, viewGroup, false);
-        Log.e(TAG, "Came into Adapter onCreateViewHolder");
+        //Log.e(TAG, "Came into Adapter onCreateViewHolder");
         return new ViewHolder(cardView_pathCards);
     }
 
@@ -55,7 +55,7 @@ public class PathsCardViewAdapter extends RecyclerView.Adapter<PathsCardViewAdap
         iv_pathLogo.setImageResource(typArr_pathLogos.getResourceId(i, -1));
         iv_pathLogo.setContentDescription(strArr_pathLogoContDescs[i]);
 
-        Log.e(TAG, "Came into Adapter onBindViewHolder");
+        //Log.e(TAG, "Came into Adapter onBindViewHolder");
 
     }
 

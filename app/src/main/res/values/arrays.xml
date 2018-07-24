@@ -14,4 +14,46 @@
         <item>@drawable/team_collaboration_logo</item>
         <item>@drawable/visionary_communication_logo</item>
     </array>
+
+    <!-- Pathway Title Array -->
+    <string-array name="pathway_title_array">
+        <item>@string/pathname_dynamic_leadership</item>
+        <item>@string/pathname_effective_coaching</item>
+        <item>@string/pathname_innovative_planning</item>
+        <item>@string/pathname_leadership_development</item>
+        <item>@string/pathname_motivational_strategies</item>
+        <item>@string/pathname_persuasive_influence</item>
+        <item>@string/pathname_presentation_mastery</item>
+        <item>@string/pathname_strategic_relationships</item>
+        <item>@string/pathname_team_collaboration</item>
+        <item>@string/pathname_visionary_communication</item>
+    </string-array>
+
+    <!-- Pathway Icon Content Description Array -->
+    <string-array name="pathway_icon_cont_desc_array">
+        <item>@string/cont_desc_dynamic_leadership_logo</item>
+        <item>@string/cont_desc_effective_coaching_logo</item>
+        <item>@string/cont_desc_innovative_planning_logo</item>
+        <item>@string/cont_desc_leadership_development_logo</item>
+        <item>@string/cont_desc_motivational_strategies_logo</item>
+        <item>@string/cont_desc_persuasive_influence_logo</item>
+        <item>@string/cont_desc_presentation_mastery_logo</item>
+        <item>@string/cont_desc_strategic_relationships_logo</item>
+        <item>@string/cont_desc_team_collaboration_logo</item>
+        <item>@string/cont_desc_visionary_communication_logo</item>
+    </string-array>
+
+    <!-- Pathway Path Description Array -->
+    <string-array name="pathway_path_desc_array">
+        <item>@string/pathdesc_dynamic_leadership</item>
+        <item>@string/pathdesc_effective_coaching</item>
+        <item>@string/pathdesc_innovative_planning</item>
+        <item>@string/pathdesc_leadership_development</item>
+        <item>@string/pathdesc_motivational_strategies</item>
+        <item>@string/pathdesc_persuasive_influence</item>
+        <item>@string/pathdesc_presentation_mastery</item>
+        <item>@string/pathdesc_strategic_relationships</item>
+        <item>@string/pathdesc_team_collaboration</item>
+        <item>@string/pathdesc_visionary_communication</item>
+    </string-array>
 </resources>
