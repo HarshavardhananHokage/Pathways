@@ -4,7 +4,6 @@ import android.content.res.TypedArray;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -35,7 +34,7 @@ public class PathsCardViewAdapter extends RecyclerView.Adapter<PathsCardViewAdap
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
 
         CardView cardView_pathCards = (CardView) LayoutInflater.from(viewGroup.getContext())
-                .inflate(R.layout.paths_main_cardview, viewGroup, false);
+                .inflate(R.layout.view_card_paths_main, viewGroup, false);
         //Log.e(TAG, "Came into Adapter onCreateViewHolder");
         return new ViewHolder(cardView_pathCards);
     }
