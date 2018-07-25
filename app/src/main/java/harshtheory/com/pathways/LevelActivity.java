@@ -15,6 +15,8 @@ import harshtheory.com.pathways.util.PathwayAppConstants;
 
 public class LevelActivity extends AppCompatActivity implements GetPathForLevel {
 
+    public static final String TAG = "LevelActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

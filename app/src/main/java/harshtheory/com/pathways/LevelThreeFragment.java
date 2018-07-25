@@ -16,6 +16,8 @@ import harshtheory.com.pathways.interfaces.GetPathForLevel;
  */
 public class LevelThreeFragment extends Fragment {
 
+    public static final String TAG = "LevelThreeFragment";
+
     private int pathID = -1;
 
     private GetPathForLevel getPathForLevel;

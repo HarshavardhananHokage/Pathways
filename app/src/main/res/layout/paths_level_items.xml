@@ -3,12 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/pll_tv_item_init_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/circle"
@@ -16,12 +17,12 @@
         android:text="M"
         android:textAppearance="@android:style/TextAppearance.Medium"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintBottom_toBottomOf="@+id/pll_linear_layout"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+        app:layout_constraintTop_toTopOf="@+id/pll_linear_layout" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/pll_linear_layout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -35,10 +36,19 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/pll_tv_level_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Make Connections Through Networking" />
+            android:text="Make Connections Through Networking"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/pll_tv_level_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Make Connections Through Networking"
+            android:maxLines="2"
+            android:ellipsize="end" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
