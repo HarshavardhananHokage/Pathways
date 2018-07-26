@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <!--
-     <string name="_title"></string>
-    <string name="_desc"></string>
-    <string name="_purpose"></string>
-    <string name="_overview"></string>
-    <string-array name="_includes">
+    <string name="title"></string>
+    <string name="desc"></string>
+    <string name="purpose"></string>
+    <string name="overview"></string>
+    <string-array name="includes">
         <item></item>
     </string-array>
     -->

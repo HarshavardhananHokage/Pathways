@@ -1,2 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <!--
+    <string name="title"></string>
+    <string name="desc"></string>
+    <string name="purpose"></string>
+    <string name="overview"></string>
+    <string-array name="includes">
+        <item></item>
+    </string-array>
+    -->
+
+    <!-- Negotiate the Best Outcome -->
+    <string name="nego_best_out_title">Negotiate the Best Outcome</string>
+    <string name="nego_best_out_desc">This project focuses on identifying negotiation styles, engaging in mutually beneficial discussions, and finding and building common ground.</string>
+    <string name="nego_best_out_purpose">The purpose of this project is to learn about different types of negotiation and the strategies that can be used when negotiating.</string>
+    <string name="nego_best_out_overview">Develop a 5- to 7-minute speech about a past or upcoming negotiation in your life. The negotiation must be one that you have participated in or will participate in. You may choose to reflect on the strategies you used or those that you believe would be the most beneficial in the future. Your speech can be persuasive, humorous, informational, or crafted in any style that appeals to you and supports your speech content.</string>
+    <string-array name="nego_best_out_includes">
+        <item>Analyzing a past or future negotiation in your life</item>
+        <item>The Negotiation Goal Setting resource</item>
+        <item>A 5- to 7-minute speech</item>
+    </string-array>
+
+    <!-- Using Presentation Software -->
+    <string name="use_present_soft_title">Using Presentation Software</string>
+    <string name="use_present_soft_desc">This project addresses the use of presentation software—from identifying topics that benefit from the use of technology to effective slide design and presentation.</string>
+    <string name="use_present_soft_purpose">The purpose of this project is to introduce or review basic presentation software strategies for creating and using slides to support or enhance a speech.</string>
+    <string name="use_present_soft_overview">Select a speech topic that lends well to a visual presentation using technology. Use the content of this project and your own research to help you develop your slides. Give a 5- to 7-minute speech using the slides you developed. Your speech can be humorous, demonstrative, or informational, and it may include stories or anecdotes.</string>
+    <string-array name="use_present_soft_includes">
+        <item>Developing presentation slides</item>
+        <item>A 5- to 7-minute speech</item>
+    </string-array>
+
+    <!-- Deliver Social Speeches -->
+    <string name="deliver_soc_speech_title">Deliver Social Speeches</string>
+    <string name="deliver_soc_speech_desc">This project addresses the skills needed to compose a speech for a social occasion including a toast, eulogy, an acceptance speech and a speech praising an individual or group.</string>
+    <string name="deliver_soc_speech_purpose">The purpose of this project is to practice delivering social speeches in front of your club members.</string>
+    <string name="deliver_soc_speech_overview">Develop two different social speeches—each 3 to 4 minutes—and present them at two separate club meetings. You may choose any two types of social speeches that appeal to you or that you would like to practice.</string>
+    <string-array name="deliver_soc_speech_includes">
+        <item>The Social Speech Basics resource</item>
+        <item>Two 3- to 4-minute speeches</item>
+    </string-array>
+</resources>

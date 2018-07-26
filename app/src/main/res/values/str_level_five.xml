@@ -1,2 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <!--
+    <string name="title"></string>
+    <string name="desc"></string>
+    <string name="purpose"></string>
+    <string name="overview"></string>
+    <string-array name="includes">
+        <item></item>
+    </string-array>
+    -->
+
+    <!-- Lead in Any Situation -->
+    <string name="lead_any_situation_title">Lead in Any Situation</string>
+    <string name="lead_any_situation_desc">This project focuses on leadership and recognizing the need to adapt your style based on the situation and the people you lead.</string>
+    <string name="lead_any_situation_purpose">The purpose of this project is to apply the skills needed to successfully lead in a volunteer or other organization.</string>
+    <string name="lead_any_situation_overview">For at least six months, take on a leadership role in Toastmasters (at any level), within another volunteer organization, or in your career. While serving in your role, ask your peers to complete a 360° evaluation. Present an 8- to 10-minute speech about your experience as a leader. Your speech may be humorous, informational, or any type that appeals to you. The speech is not a report on the content of this project, but a reflection of your experience and/or the impact of the 360° evaluation.</string>
+    <string-array name="lead_any_situation_includes">
+        <item>Serving in a leadership for a minimum of six months</item>
+        <item>A 360° evaluation</item>
+        <item>An 8- to 10-minute speech</item>
+    </string-array>
+
+    <!-- Reflect on Your Path-->
+    <string name="reflect_path_title">Reflect on Your Path</string>
+    <string name="reflect_path_desc">This project is designed to give you an opportunity to share your experience at the end of your path.</string>
+    <string name="reflect_path_purpose">The purpose of this project is to reflect on your growth during the completion of an entire path.</string>
+    <string name="reflect_path_overview">At a club meeting, present a 10- to 12-minute speech to share your experience completing your path. Use this as an opportunity to reflect on how far you have come, summarize the skills you have learned and developed, and to celebrate your achievements. Your speech can be humorous, informational, or any style that that appeals to you and supports your speech content.</string>
+    <string-array name="reflect_path_includes">
+        <item>The Your Toastmasters Journey resource</item>
+        <item>A 10- to 12-minute speech</item>
+    </string-array>
+
+    <!-- Lessons Learned-->
+    <string name="lessons_learned_title">Lessons Learned</string>
+    <string name="lessons_learned_desc">This project addresses how to identify the discussion points of a large group meeting, encourage a culture of contribution and voicing opinions, and facilitate productive discussion that yields results.</string>
+    <string name="lessons_learned_purpose">The purpose of this project is to learn about and apply the skills needed to run a lessons learned meeting during a project or after its completion.</string>
+    <string name="lessons_learned_overview">Facilitate a lessons learned meeting for a team with which you are completing or have completed a project. This meeting is separate from your regular Toastmasters meeting. Organize and facilitate a discussion. Record the results into a document you and your team members can use to facilitate the current project or future projects. If you haven’t already, give team members an opportunity to complete a 360° evaluation of you as a team leader. (Use the 360° Evaluation resource.) Finally, present a 5- to 7-minute speech in your club about the lessons learned meeting or your leadership experience.</string>
+    <string-array name="lessons_learned_includes">
+        <item>Facilitating a lessons learned meeting</item>
+        <item>Documenting the results of the lessons learned meeting</item>
+        <item>The 360° Evaluation resource</item>
+        <item>The Lessons Learned Response Log</item>
+        <item>The Metrics Log</item>
+        <item>A 5- to 7-minute speech</item>
+    </string-array>
+</resources>

@@ -1,2 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <!--
+    <string name="title"></string>
+    <string name="desc"></string>
+    <string name="purpose"></string>
+    <string name="overview"></string>
+    <string-array name="includes">
+        <item></item>
+    </string-array>
+    -->
+
+    <!-- Manage Change -->
+    <string name="manage_change_title">Manage Change</string>
+    <string name="manage_change_desc">This project focuses on how to plan for change, develop a communication plan, and identify obstacles to success.</string>
+    <string name="manage_change_purpose">The purpose of this project is to practice developing a change management plan.</string>
+    <string name="manage_change_overview">Create a change management plan for a real or hypothetical situation. You may create a plan that is based on a past change or a future change that is happening in your personal, Toastmasters, or professional life.\nShare your change management plan with your club in a 5- to 7-minute speech. Your speech may be humorous, informational, or any other style that appeals to you. It is not a report on what you learned from the project, but an overview of your plan and how it will benefit you and the group the change affects.</string>
+    <string-array name="manage_change_includes">
+        <item>Creating a change management plan</item>
+        <item>The Prepare for Change Worksheet</item>
+        <item>The Write a Communication Plan resource</item>
+        <item>A 5- to 7-minute speech</item>
+    </string-array>
+
+    <!-- Create a Podcast -->
+    <string name="create_podcast_title">Create a Podcast</string>
+    <string name="create_podcast_desc">This project addresses the skills you need to develop a podcast, create interesting content and organize a cohesive program. You will learn how to record and upload it to the internet.</string>
+    <string name="create_podcast_purpose">The purpose of this project is to introduce you to the skills needed to organize and present a podcast.</string>
+    <string name="create_podcast_overview">Use this project and your own research to create a podcast. Record a minimum of 60 minutes of content. You are free to divide the episodes as you choose. Each separate episode must be at least 10 minutes, but may be longer if it fits your topic and style. After you record all content, play a 5- to 10-minute segment in your club. Introduce the segment in a 2- to 3-minute speech.</string>
+    <string-array name="create_podcast_includes">
+        <item>Recording 60 minutes of podcast content</item>
+        <item>A 2- to 3-minute introduction speech</item>
+    </string-array>
+
+    <!-- Building a Social Media Presence -->
+    <string name="build_soc_med_pres_title">Building a Social Media Presence</string>
+    <string name="build_soc_med_pres_desc">This project addresses how best to use different types of online communication. You will create and maintain an online profile to promote yourself or an organization.</string>
+    <string name="build_soc_med_pres_purpose">The purpose of this project is to apply your understanding of social media to enhance an established or new social media presence.</string>
+    <string name="build_soc_med_pres_overview">Use this project and your own research to build a new social media presence or enhance an existing presence. You may focus on a personal goal (such as connecting with old friends or promoting a blog) or on a professional goal (such as promoting a business or organization). Use the tools you identify as best for you and your purpose. After you achieve your goal, deliver a 5- to 7-minute speech to your club about your results, experience, and the benefits of social media. Submit the Project Completion Form to your vice president education to receive credit for completing the project.\nNote: With the vice president public relation’s approval, you may choose to create a social media presence for your Toastmasters club.</string>
+    <string-array name="build_soc_med_pres_includes">
+        <item>Establishing or enhancing a social media presence</item>
+        <item>The Project Completion Form</item>
+        <item>A 5- to 7-minute speech</item>
+    </string-array>
+</resources>
