@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--
-    <string name="name"></string>
-    <string name="desc"></string>
-    <string name="purpose"></string>
-    <string name="overview"></string>
-    <string-array name="includes">
+    <string name="_title"></string>
+    <string name="_desc"></string>
+    <string name="_purpose"></string>
+    <string name="_overview"></string>
+    <string-array name="_includes">
         <item></item>
     </string-array>
     -->
+
     <!-- Ice Breaker Details -->
     <string name="icebreaker_title">Ice Breaker</string>
     <string name="icebreaker_desc">This foundational project is designed to introduce you to your club and the skills you need to begin your Toastmasters journey.</string>

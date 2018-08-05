@@ -24,7 +24,7 @@ public class PathwaysDBSchema {
         }
     }
 
-    public static final class LevelsTable
+    public static final class ProjectsTable
     {
         public static final String NAME = "LEVELS";
 

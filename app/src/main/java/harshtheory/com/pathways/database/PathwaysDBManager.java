@@ -2,7 +2,6 @@ package harshtheory.com.pathways.database;
 
 import android.content.Context;
 import android.database.Cursor;
-import android.database.CursorWrapper;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
@@ -10,8 +9,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import harshtheory.com.pathways.models.Level;
+import harshtheory.com.pathways.models.Project;
 import harshtheory.com.pathways.models.Path;
+import harshtheory.com.pathways.util.GeneralUtils;
 
 public class PathwaysDBManager {
     private static final String TAG = "PathwaysDBManager";
@@ -56,40 +56,56 @@ public class PathwaysDBManager {
         return allPaths;
     }
 
-    public LevelCursorWrapper queryLevel(String whereClause, String[] whereArgs)
+    public Path getIndividualPath(int id)
     {
-        Cursor cursor = pathwaysDatabase.query(PathwaysDBSchema.LevelsTable.NAME, null,
-                whereClause, whereArgs, null, null, null);
+        String whereClause = PathwaysDBSchema.PathsTable.Cols.ID + "=?";
+        String[] whereArgs = new String[]{String.valueOf(id)};
+        PathsCursorWrapper pathsCursorWrapper = queryPath(whereClause, whereArgs);
 
-        return new LevelCursorWrapper(cursor);
+        if(pathsCursorWrapper.getCount() > 0)
+        {
+            pathsCursorWrapper.moveToFirst();
+            return pathsCursorWrapper.getPath();
+        }
+        return null;
     }
 
-    public List<Level> getSelectedLevels(int[] levelsList)
+    public ProjectCursorWrapper queryProject(String whereClause, String[] whereArgs, String orderByClause)
+    {
+        Cursor cursor = pathwaysDatabase.query(PathwaysDBSchema.ProjectsTable.NAME, null,
+                whereClause, whereArgs, null, null, orderByClause);
+
+        return new ProjectCursorWrapper(cursor);
+    }
+
+    public List<Project> getSelectedProjects(int[] projectIdList)
     {
         String whereClause = null;
         String[] whereArgs = null;
-        if(levelsList != null) {
-            whereClause = PathwaysDBSchema.LevelsTable.Cols.ID + "=?";
-            whereArgs = new String[]{Arrays.toString(levelsList)};
+        String orderByClause = null;
+        if(projectIdList != null) {
+            whereClause = PathwaysDBSchema.ProjectsTable.Cols.ID + " IN(" + GeneralUtils.generateQueryPlaceHolders(projectIdList.length) + ")";
+            whereArgs = GeneralUtils.convertIntArrToStrArr(projectIdList);
+            orderByClause = GeneralUtils.orderByIds(projectIdList, PathwaysDBSchema.ProjectsTable.Cols.ID);
         }
 
-        LevelCursorWrapper selectedLvlCurWrapper = queryLevel(whereClause, whereArgs);
+        ProjectCursorWrapper selectedLvlCurWrapper = queryProject(whereClause, whereArgs, orderByClause);
 
-        List<Level> selectedLevels = new ArrayList<>(selectedLvlCurWrapper.getCount());
+        List<Project> selectedProjects = new ArrayList<>(selectedLvlCurWrapper.getCount());
          selectedLvlCurWrapper.moveToFirst();
 
          try
          {
              while (!selectedLvlCurWrapper.isAfterLast())
              {
-                 selectedLevels.add(selectedLvlCurWrapper.getLevel());
+                 selectedProjects.add(selectedLvlCurWrapper.getProject());
                  selectedLvlCurWrapper.moveToNext();
              }
          }finally {
              selectedLvlCurWrapper.close();
          }
 
-         return selectedLevels;
+         return selectedProjects;
     }
 
 

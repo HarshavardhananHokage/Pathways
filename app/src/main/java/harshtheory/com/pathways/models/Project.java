@@ -1,8 +1,8 @@
 package harshtheory.com.pathways.models;
 
-public class Level {
+public class Project {
 
-    public static final String TAG = "Level";
+    public static final String TAG = "Project";
 
     private int id;
     private String title;
@@ -11,10 +11,10 @@ public class Level {
     private String overview;
     private String includes;
 
-    public Level(int id, String identifier)
+    public Project(int id, String identifier)
     {
         this.id = id;
-        this.title = identifier + "_name";
+        this.title = identifier + "_title";
         this.description = identifier + "_desc";
         this.purpose = identifier + "_purpose";
         this.overview = identifier + "_overview";
