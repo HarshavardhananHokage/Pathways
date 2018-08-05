@@ -10,6 +10,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 
+import harshtheory.com.pathways.fragments.LevelFiveFragment;
+import harshtheory.com.pathways.fragments.LevelFourFragment;
+import harshtheory.com.pathways.fragments.LevelOneFragment;
+import harshtheory.com.pathways.fragments.LevelThreeFragment;
+import harshtheory.com.pathways.fragments.LevelTwoFragment;
 import harshtheory.com.pathways.interfaces.GetPathForLevel;
 import harshtheory.com.pathways.util.PathwayAppConstants;
 

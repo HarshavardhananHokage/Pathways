@@ -1,4 +1,4 @@
-package harshtheory.com.pathways;
+package harshtheory.com.pathways.fragments;
 
 
 import android.content.Context;
@@ -8,15 +8,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import harshtheory.com.pathways.R;
 import harshtheory.com.pathways.interfaces.GetPathForLevel;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class LevelFiveFragment extends Fragment {
+public class LevelFourFragment extends Fragment {
 
-    public static final String TAG = "LevelFiveFragment";
+    public static final String TAG = "LevelFourFragment";
 
     private int pathID = -1;
 
@@ -29,7 +30,7 @@ public class LevelFiveFragment extends Fragment {
     }
 
 
-    public LevelFiveFragment() {
+    public LevelFourFragment() {
         // Required empty public constructor
     }
 
@@ -39,7 +40,7 @@ public class LevelFiveFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         pathID = getPathForLevel.getPathID();
-        return inflater.inflate(R.layout.fragment_level_five, container, false);
+        return inflater.inflate(R.layout.fragment_level_four, container, false);
     }
 
 }
