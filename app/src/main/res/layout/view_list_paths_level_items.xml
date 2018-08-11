@@ -2,7 +2,6 @@
 <android.support.v7.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/vlpli_card_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -24,6 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:background="@drawable/circle"
+            android:contentDescription="@string/project_card_circle"
             app:layout_constrainedHeight="true"
             app:layout_constrainedWidth="true"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -48,7 +48,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
-                android:text="Understanding Your Communication Style"
                 android:textAppearance="@android:style/TextAppearance" />
 
             <TextView
@@ -57,8 +56,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
                 android:ellipsize="end"
-                android:maxLines="2"
-                android:text="Understanding Your Communication Style Understanding Your Communication Style Understanding Your Communication Style" />
+                android:maxLines="2" />
         </LinearLayout>
 
     </android.support.constraint.ConstraintLayout>

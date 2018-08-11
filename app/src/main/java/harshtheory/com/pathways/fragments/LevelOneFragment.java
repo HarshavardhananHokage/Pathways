@@ -38,7 +38,7 @@ public class LevelOneFragment extends Fragment {
     private PathwaysDBManager pathwaysDBManager;
     private Path selectedPath;
 
-    RecyclerView rv_projectsList;
+    private RecyclerView rv_projectsList;
 
     @Override
     public void onAttach(Context context) {
@@ -68,7 +68,7 @@ public class LevelOneFragment extends Fragment {
         int[] lvlOneProjectIds = selectedPath.getLevelOne();
         ArrayList<Project> projectsLevelOne = pathwaysDBManager.getSelectedProjects(lvlOneProjectIds);
 
-        LevelListViewAdapter levelListViewAdapter = new LevelListViewAdapter(getContext(), projectsLevelOne);
+        LevelListViewAdapter levelListViewAdapter = new LevelListViewAdapter(getContext(), projectsLevelOne, false);
         rv_projectsList.setAdapter(levelListViewAdapter);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());

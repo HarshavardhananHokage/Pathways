@@ -4,6 +4,8 @@
     <!-- General -->
     <string name="app_bt_go_to_detail">Explore</string>
     <string name="projects_name_holder">Projects</string>
+    <string name="elec_projects_name_holder">Elective Projects</string>
+    <string name="project_card_circle">Simple Circle</string>
 
     <string name="level_1">Level One</string>
     <string name="level_2">Level Two</string>

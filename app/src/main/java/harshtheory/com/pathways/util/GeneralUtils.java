@@ -58,4 +58,9 @@ public class GeneralUtils {
         orderBy = orderBy.concat( " END");
         return orderBy;
     }
+
+    public static String[] convertIntToStringArray(int value)
+    {
+        return new String[]{String.valueOf(value)};
+    }
 }

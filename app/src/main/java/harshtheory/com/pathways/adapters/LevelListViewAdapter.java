@@ -1,7 +1,10 @@
 package harshtheory.com.pathways.adapters;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.annotation.NonNull;
+import android.support.constraint.ConstraintLayout;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -23,13 +26,15 @@ public class LevelListViewAdapter extends RecyclerView.Adapter<LevelListViewAdap
 
     private Context context;
     private ArrayList<Project> availableProjects;
+    private boolean isElective;
 
     private OnSelectProject onSelectProject;
 
-    public LevelListViewAdapter(Context context, ArrayList<Project> projects)
+    public LevelListViewAdapter(Context context, ArrayList<Project> projects, boolean isElective)
     {
         this.context = context;
         this.availableProjects = projects;
+        this.isElective = isElective;
     }
 
     @NonNull
@@ -46,8 +51,18 @@ public class LevelListViewAdapter extends RecyclerView.Adapter<LevelListViewAdap
 
         CardView cv_projectsCards = viewHolder.cardView;
 
+        if(isElective)
+        {
+            Log.e(TAG, "Hello");
+            cv_projectsCards.setCardBackgroundColor(ContextCompat.getColor(context, R.color.blueFifty));
+        }
+
         TextView tv_projectTitle = cv_projectsCards.findViewById(R.id.vlpli_tv_project_title);
         TextView tv_projectDesc = cv_projectsCards.findViewById(R.id.vlpli_tv_project_desc);
+
+        ConstraintLayout constraintLayout = cv_projectsCards.findViewById(R.id.vlpli_constraint_layout);
+
+        //constraintLayout.setBackgroundColor(Color.RED);
 
         Project project = availableProjects.get(i);
 
@@ -58,8 +73,6 @@ public class LevelListViewAdapter extends RecyclerView.Adapter<LevelListViewAdap
         String projectDescription =
                 context.getString(context.getResources().getIdentifier(project.getDescription(), "string", packageName));
 
-        Log.e(TAG, "Project Title: " +projectTitle);
-        Log.e(TAG, "Project Description: " +projectDescription);
         tv_projectTitle.setText(projectTitle);
         tv_projectDesc.setText(projectDescription);
     }
