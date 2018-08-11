@@ -1,5 +1,6 @@
 package harshtheory.com.pathways;
 
+import android.content.Intent;
 import android.content.res.TypedArray;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,13 +8,22 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
-import harshtheory.com.pathways.adapters.PathsCardViewAdapter;
+import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+import harshtheory.com.pathways.adapters.PathsCardViewAdapter;
+import harshtheory.com.pathways.database.PathwaysDBManager;
+import harshtheory.com.pathways.interfaces.OnSelectDesiredPath;
+import harshtheory.com.pathways.models.Path;
+import harshtheory.com.pathways.util.PathwayAppConstants;
+
+public class MainActivity extends AppCompatActivity implements OnSelectDesiredPath {
 
     public static final String TAG = "MainActivity";
 
-    private TypedArray typArr_pathLogo;
+
+
+    private ArrayList<Path> allPathsList = new ArrayList<>();
+    private PathwaysDBManager pathwaysDBManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,13 +32,11 @@ public class MainActivity extends AppCompatActivity {
 
         RecyclerView recView_pathwayPathCards = findViewById(R.id.am_recview_pathway_path_cards);
 
-        String[] strArr_pathTitle = getResources().getStringArray(R.array.pathway_title_array);
-        String[] strArr_pathDesc = getResources().getStringArray(R.array.pathway_path_desc_array);
-        String[] strArr_pathLogoConDesc = getResources().getStringArray(R.array.pathway_icon_cont_desc_array);
+        pathwaysDBManager = new PathwaysDBManager(this);
 
-        typArr_pathLogo = getResources().obtainTypedArray(R.array.pathways_path_drawables);
+        allPathsList = pathwaysDBManager.getAllPaths();
 
-        PathsCardViewAdapter pathsCardViewAdapter = new PathsCardViewAdapter(strArr_pathTitle, strArr_pathDesc, strArr_pathLogoConDesc, typArr_pathLogo);
+        PathsCardViewAdapter pathsCardViewAdapter = new PathsCardViewAdapter(this, allPathsList);
         recView_pathwayPathCards.setAdapter(pathsCardViewAdapter);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
@@ -37,9 +45,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        //Log.e(TAG, "Came Here");
-        typArr_pathLogo.recycle();
+    public void loadPathDetail(int id) {
+        Intent startLevelActivityIntent = new Intent(this, LevelActivity.class);
+        Path path = allPathsList.get(id);
+        startLevelActivityIntent.putExtra(PathwayAppConstants.PATH_OBJ_EXTRA, path);
+        startActivity(startLevelActivityIntent);
     }
 }

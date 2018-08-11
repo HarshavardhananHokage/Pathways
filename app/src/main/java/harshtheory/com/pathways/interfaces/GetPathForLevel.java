@@ -1,6 +1,8 @@
 package harshtheory.com.pathways.interfaces;
 
+import harshtheory.com.pathways.models.Path;
+
 public interface GetPathForLevel {
 
-    int getPathID();
+    Path getSelectedPath();
 }

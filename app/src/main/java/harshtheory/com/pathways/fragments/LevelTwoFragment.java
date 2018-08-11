@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 
 import harshtheory.com.pathways.interfaces.GetPathForLevel;
 import harshtheory.com.pathways.R;
+import harshtheory.com.pathways.models.Path;
 
 
 /**
@@ -19,14 +20,17 @@ public class LevelTwoFragment extends Fragment {
 
     public static final String TAG = "LevelTwoFragment";
 
-    private int pathID = -1;
-
     private GetPathForLevel getPathForLevel;
+
+    private Path selectedPath;
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        getPathForLevel = (GetPathForLevel) context;
+        if(context instanceof GetPathForLevel)
+        {
+            getPathForLevel = (GetPathForLevel) context;
+        }
     }
 
 
@@ -39,7 +43,7 @@ public class LevelTwoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        pathID = getPathForLevel.getPathID();
+        selectedPath = getPathForLevel.getSelectedPath();
         return inflater.inflate(R.layout.fragment_level_two, container, false);
     }
 

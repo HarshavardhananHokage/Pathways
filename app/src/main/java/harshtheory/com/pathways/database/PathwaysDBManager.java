@@ -32,10 +32,10 @@ public class PathwaysDBManager {
         return new PathsCursorWrapper(cursor);
     }
 
-   public List<Path> getAllPaths()
+   public ArrayList<Path> getAllPaths()
     {
         PathsCursorWrapper allPathsCursorWrapper = queryPath(null, null);
-        List<Path> allPaths = new ArrayList<>(allPathsCursorWrapper.getCount());
+        ArrayList<Path> allPaths = new ArrayList<>(allPathsCursorWrapper.getCount());
 
         try
         {
@@ -78,7 +78,7 @@ public class PathwaysDBManager {
         return new ProjectCursorWrapper(cursor);
     }
 
-    public List<Project> getSelectedProjects(int[] projectIdList)
+    public ArrayList<Project> getSelectedProjects(int[] projectIdList)
     {
         String whereClause = null;
         String[] whereArgs = null;
@@ -91,7 +91,7 @@ public class PathwaysDBManager {
 
         ProjectCursorWrapper selectedLvlCurWrapper = queryProject(whereClause, whereArgs, orderByClause);
 
-        List<Project> selectedProjects = new ArrayList<>(selectedLvlCurWrapper.getCount());
+        ArrayList<Project> selectedProjects = new ArrayList<>(selectedLvlCurWrapper.getCount());
          selectedLvlCurWrapper.moveToFirst();
 
          try

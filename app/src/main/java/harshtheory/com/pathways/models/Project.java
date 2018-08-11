@@ -1,6 +1,8 @@
 package harshtheory.com.pathways.models;
 
-public class Project {
+import java.io.Serializable;
+
+public class Project implements Serializable {
 
     public static final String TAG = "Project";
 

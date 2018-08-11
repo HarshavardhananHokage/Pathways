@@ -1,8 +1,10 @@
 package harshtheory.com.pathways.models;
 
+import java.io.Serializable;
+
 import harshtheory.com.pathways.util.GeneralUtils;
 
-public class Path
+public class Path implements Serializable
 {
     public static final String TAG = "Path";
 
