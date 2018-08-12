@@ -17,8 +17,9 @@ public class ProjectCursorWrapper extends CursorWrapper {
     public Project getProject()
     {
         int id = getInt(getColumnIndex(ProjectsTable.Cols.ID));
+        String name = getString(getColumnIndex(ProjectsTable.Cols.NAME));
         String identifier = getString(getColumnIndex(ProjectsTable.Cols.IDENTIFIER));
 
-        return new Project(id, identifier);
+        return new Project(id, name, identifier);
     }
 }

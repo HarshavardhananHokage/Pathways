@@ -11,6 +11,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -21,21 +23,25 @@ import harshtheory.com.pathways.R;
 import harshtheory.com.pathways.interfaces.OnSelectProject;
 import harshtheory.com.pathways.models.Project;
 
-public class LevelListViewAdapter extends RecyclerView.Adapter<LevelListViewAdapter.ViewHolder>
+public class LevelListViewAdapter extends RecyclerView.Adapter<LevelListViewAdapter.ViewHolder> implements Filterable
 {
     public static final String TAG = "LevelListViewAdapter";
 
     private Context context;
     private ArrayList<Project> availableProjects;
+    private ArrayList<Project> originalDataList;
     private boolean isElective;
 
     private OnSelectProject onSelectProject;
+    private ProjectFilter projectFilter;
 
     public LevelListViewAdapter(Context context, ArrayList<Project> projects, boolean isElective)
     {
         this.context = context;
         this.availableProjects = projects;
+        this.originalDataList = projects;
         this.isElective = isElective;
+        projectFilter = new ProjectFilter();
     }
 
     @NonNull
@@ -93,6 +99,11 @@ public class LevelListViewAdapter extends RecyclerView.Adapter<LevelListViewAdap
         return availableProjects.size();
     }
 
+    @Override
+    public Filter getFilter() {
+        return projectFilter;
+    }
+
     public static class ViewHolder extends RecyclerView.ViewHolder
     {
         CardView cardView;
@@ -101,6 +112,48 @@ public class LevelListViewAdapter extends RecyclerView.Adapter<LevelListViewAdap
         {
             super(cv);
             cardView = cv;
+        }
+    }
+
+    private class ProjectFilter extends Filter
+    {
+        @Override
+        protected FilterResults performFiltering(CharSequence constraint) {
+            FilterResults results = new FilterResults();
+            String filterString = constraint.toString().toLowerCase();
+            ArrayList<Project> searchList = new ArrayList<>();
+            ArrayList<Project> orginalList = originalDataList;
+
+            int count = orginalList.size();
+
+            if(constraint != null && constraint.length() > 0)
+            {
+                for(int i = 0; i < count; i++)
+                {
+                    String name = orginalList.get(i).getName();
+                    if(name.toLowerCase().contains(filterString))
+                    {
+                        searchList.add(orginalList.get(i));
+                    }
+                }
+                results.values = searchList;
+                results.count = searchList.size();
+            }
+            else
+            {
+                results.values = orginalList;
+                results.count = orginalList.size();
+            }
+
+            return results;
+        }
+
+        @Override
+        protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
+
+            availableProjects = (ArrayList<Project>) filterResults.values;
+            notifyDataSetChanged();
+
         }
     }
 }

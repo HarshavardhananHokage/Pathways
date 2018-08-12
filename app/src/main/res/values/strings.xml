@@ -24,6 +24,9 @@
     <string name="navigation_drawer_header_image">Navigation Drawer Header Image</string>
     <string name="nav_draw_open">Open Nav Drawer</string>
     <string name="nav_draw_close">Close Nav Drawer</string>
+    <string name="search_toolbar_title">All Projects</string>
+    <string name="search_view_hint">Search Projects&#8230;</string>
+    <string name="menu_search_title">Search</string>
 
 
 </resources>
