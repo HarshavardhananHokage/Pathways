@@ -7,23 +7,23 @@
     <string name="elec_projects_name_holder">Elective Projects</string>
     <string name="project_card_circle">Simple Circle</string>
 
-    <string name="level_1">Level One</string>
-    <string name="level_2">Level Two</string>
-    <string name="level_3">Level Three</string>
-    <string name="level_4">Level Four</string>
-    <string name="level_5">Level Five</string>
+    <!-- Project Detail Activity Holders -->
+    <string name="prj_purpose_holder">Purpose:</string>
+    <string name="prj_overview_holder">Overview:</string>
+    <string name="prj_includes_holder">This Project Includes:</string>
 
-    <!-- Pathway Project Names-->
-    <string name="pathways_level_1">Mastering Fundamentals</string>
-    <string name="pathways_level_2">Learning Your Style</string>
-    <string name="pathways_level_3">Increasing Knowledge</string>
-    <string name="pathways_level_4">Building Skills</string>
-    <string name="pathways_level_5">Demonstrating Expertise</string>
+    <!-- Main Menu in Navigation Bar -->
+    <string name="menu_home">Home</string>
+    <string name="menu_projects">Projects</string>
+    <string name="menu_sample">Sample</string>
+    <string name="menu_subgroup_support">Support</string>
+    <string name="menu_support_rate_app">Rate App</string>
+    <string name="menu_siupport_feedback">Feedback</string>
 
-    <string name="pathways_level_1_cont_desc">Mastering Fundamentals Logo</string>
-    <string name="pathways_level_2_cont_desc">Learning Your Style Logo</string>
-    <string name="pathways_level_3_cont_desc">Increasing Knowledge Logo</string>
-    <string name="pathways_level_4_cont_desc">Building Skills Logo</string>
-    <string name="pathways_level_5_cont_desc">Demonstrating Expertise Logo</string>
+    <!-- Main Navigational Drawer -->
+    <string name="navigation_drawer_header_image">Navigation Drawer Header Image</string>
+    <string name="nav_draw_open">Open Nav Drawer</string>
+    <string name="nav_draw_close">Close Nav Drawer</string>
+
 
 </resources>

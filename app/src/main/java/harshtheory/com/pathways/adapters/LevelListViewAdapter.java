@@ -9,6 +9,7 @@ import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
@@ -47,7 +48,7 @@ public class LevelListViewAdapter extends RecyclerView.Adapter<LevelListViewAdap
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
+    public void onBindViewHolder(@NonNull ViewHolder viewHolder, final int i) {
 
         CardView cv_projectsCards = viewHolder.cardView;
 
@@ -64,7 +65,7 @@ public class LevelListViewAdapter extends RecyclerView.Adapter<LevelListViewAdap
 
         //constraintLayout.setBackgroundColor(Color.RED);
 
-        Project project = availableProjects.get(i);
+        final Project project = availableProjects.get(i);
 
         String packageName = context.getPackageName();
 
@@ -75,6 +76,16 @@ public class LevelListViewAdapter extends RecyclerView.Adapter<LevelListViewAdap
 
         tv_projectTitle.setText(projectTitle);
         tv_projectDesc.setText(projectDescription);
+
+        cv_projectsCards.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(context instanceof OnSelectProject)
+                {
+                    ((OnSelectProject) context).loadProjectDetails(project);
+                }
+            }
+        });
     }
 
     @Override

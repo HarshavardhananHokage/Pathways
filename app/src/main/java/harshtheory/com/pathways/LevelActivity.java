@@ -1,5 +1,6 @@
 package harshtheory.com.pathways;
 
+import android.content.Intent;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -19,6 +20,7 @@ import harshtheory.com.pathways.fragments.LevelTwoFragment;
 import harshtheory.com.pathways.interfaces.GetPathForLevel;
 import harshtheory.com.pathways.interfaces.OnSelectProject;
 import harshtheory.com.pathways.models.Path;
+import harshtheory.com.pathways.models.Project;
 import harshtheory.com.pathways.util.PathwayAppConstants;
 
 public class LevelActivity extends AppCompatActivity implements GetPathForLevel, OnSelectProject {
@@ -53,8 +55,11 @@ public class LevelActivity extends AppCompatActivity implements GetPathForLevel,
     }
 
     @Override
-    public void loadProjectDetails(int id) {
-        Log.e(TAG, "Project with ID selected: " +id);
+    public void loadProjectDetails(Project project) {
+
+        Intent loadProjectDetail = new Intent(this, ProjectDetailActivity.class);
+        loadProjectDetail.putExtra(PathwayAppConstants.PROJECT_OBJ_EXTRA, project);
+        startActivity(loadProjectDetail);
     }
 
     public class LevelFragmentPager extends FragmentPagerAdapter

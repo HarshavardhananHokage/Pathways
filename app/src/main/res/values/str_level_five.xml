@@ -16,7 +16,7 @@
     <string name="lead_any_situation_purpose">The purpose of this project is to apply the skills needed to successfully lead in a volunteer or other organization.</string>
     <string name="lead_any_situation_overview">For at least six months, take on a leadership role in Toastmasters (at any level), within another volunteer organization, or in your career. While serving in your role, ask your peers to complete a 360° evaluation. Present an 8- to 10-minute speech about your experience as a leader. Your speech may be humorous, informational, or any type that appeals to you. The speech is not a report on the content of this project, but a reflection of your experience and/or the impact of the 360° evaluation.</string>
     <string-array name="lead_any_situation_includes">
-        <item>Serving in a leadership for a minimum of six months</item>
+        <item>Serving in a leadership for a minimum of six monthsn</item>
         <item>A 360° evaluation</item>
         <item>An 8- to 10-minute speech</item>
     </string-array>

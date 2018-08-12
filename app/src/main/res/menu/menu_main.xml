@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/mm_home"
+            android:title="@string/menu_home"
+            android:icon="@android:drawable/arrow_down_float"
+            android:checked="true" />
+        <item android:id="@+id/mm_projects"
+            android:title="@string/menu_projects"
+            android:icon="@android:drawable/arrow_down_float"
+            android:checked="true" />
+        <item android:id="@+id/mm_sample"
+            android:title="@string/menu_sample"
+            android:icon="@android:drawable/arrow_down_float"
+            android:checked="true" />
+    </group>
+
+    <item android:title="@string/menu_subgroup_support">
+        <menu>
+            <item android:id="@+id/mm_rate_app"
+                android:title="@string/menu_support_rate_app"
+                android:icon="@android:drawable/arrow_down_float" />
+            <item android:id="@+id/mm_feedback"
+                android:title="@string/menu_siupport_feedback"
+                android:icon="@android:drawable/arrow_down_float" />
+        </menu>
+    </item>
+
+</menu>
