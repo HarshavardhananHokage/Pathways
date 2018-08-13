@@ -23,6 +23,7 @@ import harshtheory.com.pathways.adapters.PathsCardViewAdapter;
 import harshtheory.com.pathways.database.PathwaysDBManager;
 import harshtheory.com.pathways.interfaces.OnSelectDesiredPath;
 import harshtheory.com.pathways.models.Path;
+import harshtheory.com.pathways.util.GeneralUtils;
 import harshtheory.com.pathways.util.PathwayAppConstants;
 
 public class MainActivity extends AppCompatActivity implements OnSelectDesiredPath, NavigationView.OnNavigationItemSelectedListener {
@@ -76,7 +77,37 @@ public class MainActivity extends AppCompatActivity implements OnSelectDesiredPa
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        return false;
+
+        int id = menuItem.getItemId();
+
+        switch (id)
+        {
+            case R.id.mm_home:
+                mainDrawerLayout.closeDrawer(GravityCompat.START);
+                break;
+            case R.id.mm_projects:
+                Intent allProjectsIntent = new Intent(this, ProjectSearchActivity.class);
+                startActivity(allProjectsIntent);
+                break;
+            case R.id.mm_rate_app:
+                GeneralUtils.rateAppAtPlayStore(this);
+                break;
+            case R.id.mm_feedback:
+                giveFeedback();
+                break;
+        }
+        mainDrawerLayout.closeDrawer(GravityCompat.START);
+        return true;
+    }
+
+    public void giveFeedback()
+    {
+        Intent emailIntent = new Intent(Intent.ACTION_SEND);
+        emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"harshavardhan2990@gmail.com"});
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Pathways App Feedback");
+        emailIntent.putExtra(Intent.EXTRA_TEXT, "My Feedback: ");
+        emailIntent.setType("message/rfc822");
+        startActivity(Intent.createChooser(emailIntent, "Choose an Email Client.."));
     }
 
     @Override

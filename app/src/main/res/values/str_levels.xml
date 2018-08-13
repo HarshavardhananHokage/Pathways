@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="level_0">In Detail</string>
     <string name="level_1">Level One</string>
     <string name="level_2">Level Two</string>
     <string name="level_3">Level Three</string>

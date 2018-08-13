@@ -47,8 +47,8 @@ public class ProjectSearchActivity extends AppCompatActivity implements OnSelect
         }
 
         pathwaysDBManager = new PathwaysDBManager(this);
-        int[] projectList = new int[]{17,14,45,52,51,20,35,9,54,27,6,2,21,44,25};
-        allProjects = pathwaysDBManager.getSelectedProjects(projectList);
+        //int[] projectList = new int[]{17,14,45,52,51,20,35,9,54,27,6,2,21,44,25};
+        allProjects = pathwaysDBManager.getSelectedProjects(null);
 
         Log.e(TAG, "Size of projects:"+allProjects.size());
 

@@ -21,6 +21,9 @@
         android:id="@+id/aps_rv_project_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="16dp" />
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"/>
 
 </LinearLayout>

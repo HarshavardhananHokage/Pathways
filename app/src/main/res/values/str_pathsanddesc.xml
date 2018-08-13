@@ -92,4 +92,17 @@
         solutions. Speech writing and speech delivery are emphasized in each project. This path culminates in the
         development and launch of a long-term personal or professional vision.
     </string>
+
+    <string-array name="path_quotes">
+        <item>"A leader is best when people barely know he exists, when his work is done, his aim fulfilled, they will say: we did it ourselves."</item>
+        <item>"I think the most important thing about coaching is that you have to have a sense of confidence about what you're doing."</item>
+        <item>"In preparing for battle I have always found that plans are useless, but planning is indispensable."</item>
+        <item>"Leaders aren\'t born, they are made. And they are made just like anything else, through hard work. And that's the price we'll have to pay to achieve that goal, or any goal."</item>
+        <item>"Success… seems to be connected with action. Successful people keep moving. They make mistakes, but they don’t quit."</item>
+        <item>"Influence is when you are not the one talking and yet your words fill the room; when you are absent and yet your presence is felt everywhere."</item>
+        <item>"To talk well and eloquently is a very great art, but that an equally great one is to know the right moment to stop."</item>
+        <item>"You can make more friends in two months by becoming interested in other people than you can in two years by trying to get other people interested in you."</item>
+        <item>"Coming together is a beginning. Keeping together is progress. Working together is success."</item>
+        <item>"Good leaders must communicate vision clearly, creatively, and continually. However, the vision doesn't come alive until the leader models it."</item>
+    </string-array>
 </resources>

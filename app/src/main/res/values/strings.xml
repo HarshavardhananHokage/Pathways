@@ -4,8 +4,10 @@
     <!-- General -->
     <string name="app_bt_go_to_detail">Explore</string>
     <string name="projects_name_holder">Projects</string>
-    <string name="elec_projects_name_holder">Elective Projects</string>
+    <string name="elec_projects_name_holder">Elective Projects (Choose 2)</string>
+    <string name="elec_projects_name_holder_1">Elective Projects (Choose 1)</string>
     <string name="project_card_circle">Simple Circle</string>
+    <string name="path_description_holder">Description</string>
 
     <!-- Project Detail Activity Holders -->
     <string name="prj_purpose_holder">Purpose:</string>
@@ -27,6 +29,11 @@
     <string name="search_toolbar_title">All Projects</string>
     <string name="search_view_hint">Search Projects&#8230;</string>
     <string name="menu_search_title">Search</string>
+    <string name="sample_view">Sample View</string>
+    <string name="toolbar_title_project_detail">Project Detail</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="general_holder">Temporary Place Holder</string>
 
 
 </resources>

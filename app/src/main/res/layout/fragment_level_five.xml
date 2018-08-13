@@ -79,7 +79,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
-            android:text="@string/elec_projects_name_holder"
+            android:text="@string/elec_projects_name_holder_1"
             android:textAppearance="@android:style/TextAppearance"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

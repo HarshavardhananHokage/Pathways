@@ -1,5 +1,9 @@
 package harshtheory.com.pathways.util;
 
+import android.content.ActivityNotFoundException;
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.util.Log;
 
 public class GeneralUtils {
@@ -59,8 +63,17 @@ public class GeneralUtils {
         return orderBy;
     }
 
-    public static String[] convertIntToStringArray(int value)
+    public static void rateAppAtPlayStore(Context context)
     {
-        return new String[]{String.valueOf(value)};
+        try {
+            Uri uri = Uri.parse("market://details?id="+ PathwayAppConstants.PACKAGE_NAME);
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            context.startActivity(intent);
+        }catch (ActivityNotFoundException anfe)
+        {
+            Uri uri = Uri.parse("https://play.google.com/store/apps/details?id="+ PathwayAppConstants.PACKAGE_NAME);
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            context.startActivity(intent);
+        }
     }
 }
