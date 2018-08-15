@@ -5,8 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/pmcv_card_view"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginBottom="100dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="30dp"
     android:layout_marginStart="30dp"
     android:layout_marginEnd="30dp"
     android:layout_marginTop="30dp"
@@ -14,32 +14,30 @@
     app:cardElevation="4dp"
     app:cardBackgroundColor="@color/white">
 
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/pmcv_constraint_layout"
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <View
             android:layout_width="match_parent"
             android:layout_height="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0"
             android:contentDescription="@string/sample_view"
             android:background="@color/colorAccent"/>
 
-        <View
+        <TextView
+            android:id="@+id/pmcv_tv_path_title"
             android:layout_width="match_parent"
-            android:layout_height="8dp"
-            android:background="@color/colorAccent"
-            android:contentDescription="@string/sample_view"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/pathname_dynamic_leadership"
+            android:textAllCaps="true"
+            android:textAppearance="@android:style/TextAppearance.Large" />
 
         <ImageView
             android:id="@+id/pmcv_iv_path_logo"
@@ -49,49 +47,9 @@
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:contentDescription="@string/cont_desc_dynamic_leadership_logo"
-            app:layout_constrainedHeight="true"
-            app:layout_constrainedWidth="true"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.25"
             app:srcCompat="@drawable/dynamic_leadership_logo" />
-
-        <TextView
-            android:id="@+id/pmcv_tv_path_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:gravity="center"
-            android:text="@string/pathname_dynamic_leadership"
-            android:textAllCaps="true"
-            android:textAppearance="@android:style/TextAppearance.Large"
-            app:layout_constraintBottom_toTopOf="@+id/pmcv_iv_path_logo"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/pmcv_bt_explore_path"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="34dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:text="@string/app_bt_go_to_detail"
-            app:layout_constrainedHeight="true"
-            app:layout_constrainedWidth="true"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:textColor="@color/white"
-            android:background="@drawable/button_pressed"/>
 
         <TextView
             android:id="@+id/pmcv_tv_path_desc"
@@ -103,14 +61,26 @@
             android:layout_marginTop="8dp"
             android:ellipsize="end"
             android:maxLines="5"
-            android:text="@string/pathdesc_dynamic_leadership"
-            app:layout_constrainedHeight="true"
-            app:layout_constrainedWidth="true"
-            app:layout_constraintBottom_toTopOf="@+id/pmcv_bt_explore_path"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/pmcv_iv_path_logo"
-            app:layout_constraintVertical_bias="0.25" />
+            android:text="@string/pathdesc_dynamic_leadership" />
 
-    </android.support.constraint.ConstraintLayout>
+        <Button
+            android:id="@+id/pmcv_bt_explore_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/app_bt_go_to_detail"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:background="@drawable/button_pressed"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/colorAccent"
+            android:contentDescription="@string/sample_view" />
+
+    </LinearLayout>
 </android.support.v7.widget.CardView>

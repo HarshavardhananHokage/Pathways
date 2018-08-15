@@ -22,10 +22,19 @@
             app:titleTextColor="@android:color/white"
             android:theme="@style/ToolBarStyle"/>
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/am_recview_pathway_path_cards"
+        <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/am_recview_pathway_path_cards"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.v4.widget.NestedScrollView>
+
+
 
     </LinearLayout>
 
