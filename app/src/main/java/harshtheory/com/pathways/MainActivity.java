@@ -3,8 +3,11 @@ package harshtheory.com.pathways;
 import android.content.Intent;
 import android.content.res.TypedArray;
 import android.graphics.Color;
+import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
+import android.support.design.widget.TabLayout;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -15,7 +18,11 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -65,6 +72,24 @@ public class MainActivity extends AppCompatActivity implements OnSelectDesiredPa
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         recView_pathwayPathCards.setLayoutManager(linearLayoutManager);
+
+        //Toast.makeText(this, "Scrolls this side <---", Toast.LENGTH_LONG).show();
+
+        Snackbar snack = Snackbar.make(findViewById(android.R.id.content), "<-- Scrolls to the left <--", Snackbar.LENGTH_LONG);
+
+        View view = snack.getView();
+        TextView tv = view.findViewById(android.support.design.R.id.snackbar_text);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
+            tv.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+        } else {
+            tv.setGravity(Gravity.CENTER_HORIZONTAL);
+        }
+
+        snack.setActionTextColor(getResources().getColor(R.color.colorPrimary ));
+        snack.show();
+
+
     }
 
     @Override
